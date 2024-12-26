@@ -6,7 +6,7 @@ Tapon is a feature-rich Flutter-based grocery store mobile application designed 
 
 - **Launch Page**:
   - A visually appealing splash screen to welcome users.
-  - ![Home Screen](assets/images/home_screen.png "Home Screen")
+  - ![Home Screen](assets/images/b.png "Home Screen")
     
 
 - **Enter Number Page**:
