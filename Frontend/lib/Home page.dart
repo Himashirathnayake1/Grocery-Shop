@@ -1,6 +1,9 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:tap_on/Products/ProductMenu2.dart';
+import 'package:tap_on/Products/ProductMenu3.dart';
+import 'package:tap_on/Products/ProductMenu4.dart';
 import 'package:tap_on/User/AddToCart.dart';
 import 'package:tap_on/User/EnterNumber.dart';
 import 'package:tap_on/User/Profile.dart';
@@ -103,7 +106,7 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   ServiceCard(
                     imagePath: 'assets/images/grossery.jpg',
-                    label: 'Groceries and Essentials',
+                    label: 'Milk and Shorties',
                     onTap: () {
                      // navigate to UT_ToolMenu page
                       Navigator.push(
@@ -114,27 +117,42 @@ class _HomePageState extends State<HomePage> {
                   ),
                   ServiceCard(
                     imagePath: 'assets/images/home.jpg',
-                    label: 'Home and Kitchen',
-                    onTap: () {},
+                    label: 'Vegetables',
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => UT_ToolMenu2(shopName: '', shopEmail: '', shopPhone: '', shopId: '', product: '',)),
+                      );
+                    },
                   ),
                   ServiceCard(
                     imagePath: 'assets/images/health.jpg',
-                    label: 'Health and Care',
-                    onTap: () {},
+                    label: 'Drinks',
+                    onTap: () {
+                       Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => UT_ToolMenu3(shopName: '', shopEmail: '', shopPhone: '', shopId: '', product: '',)),
+                      );
+                    },
                   ),
                   ServiceCard(
-                    imagePath: 'assets/images/cloth.jpg',
-                    label: 'Fashion and Clothing',
-                    onTap: () {},
+                    imagePath: 'assets/images/mybaner.jpg',
+                    label: 'Snacks',
+                    onTap: () {
+                       Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => UT_ToolMenu4(shopName: '', shopEmail: '', shopPhone: '', shopId: '', product: '',)),
+                      );
+                    },
                   ),
                   ServiceCard(
                     imagePath: 'assets/images/elec.jpg',
-                    label: 'Electronics and Gadgets',
+                    label: 'Food and Beverages',
                     onTap: () {},
                   ),
                   ServiceCard(
                     imagePath: 'assets/images/baby.jpg',
-                    label: 'Baby and Kids',
+                    label: 'Baby Care',
                     onTap: () {},
                   ),
                 ],
