@@ -7,7 +7,7 @@ import 'package:tap_on/constants.dart';
 //
 
 void main() async {
-  await dotenv.load(fileName: ".env");
+  const String baseUrl = "http://localhost:3000/api/v1";
   runApp(const InitialScreen());
 }
 

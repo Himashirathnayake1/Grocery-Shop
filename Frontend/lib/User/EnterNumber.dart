@@ -82,7 +82,7 @@ class _EnterNumberState extends State<EnterNumber> {
                     .center, // Center the children horizontally
                 children: [
                   const Text(
-                    'Pegas Distributors', // Display the app name
+                    'TapOn Distributors', // Display the app name
                     style: TextStyle(
                       fontSize: 40, // Set the font size
                       fontWeight: FontWeight.bold, // Set the font weight
