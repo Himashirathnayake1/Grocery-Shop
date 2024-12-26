@@ -41,8 +41,7 @@ Tapon is a feature-rich Flutter-based grocery store mobile application designed 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/tapon.git
-   cd tapon
+   git clone (https://github.com/RishafH/Grocery-Shop.git)
    ```
 
 2. Install Flutter dependencies:
