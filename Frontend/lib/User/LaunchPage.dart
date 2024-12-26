@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tap_on/User/EnterNumber.dart';
 
+
 const String imagePath = 'assets/images/Launch_Bg.jpeg';
 
 class LaunchPage extends StatelessWidget {
@@ -80,12 +81,8 @@ class LaunchPage extends StatelessWidget {
                     height: 20), // Adjust the space to move the button up
                 ElevatedButton(
                   onPressed: () {
-                    // navigate to EnterNumber page
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => EnterNumber()),
-                    );
-
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => EnterNumber()));
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color.fromARGB(190, 0, 142, 244),
