@@ -41,7 +41,7 @@ Tapon is a feature-rich Flutter-based grocery store mobile application designed 
 
 1. Clone the repository:
    ```bash
-   git clone (https://github.com/RishafH/Grocery-Shop.git)
+   git clone https://github.com/RishafH/Grocery-Shop.git
    ```
 
 2. Install Flutter dependencies:
@@ -49,16 +49,9 @@ Tapon is a feature-rich Flutter-based grocery store mobile application designed 
    flutter pub get
    ```
 
-3. Set up and run the backend:
-   - Navigate to the `backend` directory.
-   - Install dependencies:
-     ```bash
-     npm install
-     ```
-   - Start the server:
-     ```bash
-     npm start
-     ```
+3. Set up and run the frontend:
+   - Navigate to the `Frontend` directory.
+ 
 
 4. Run the app:
    ```bash
@@ -69,8 +62,6 @@ Tapon is a feature-rich Flutter-based grocery store mobile application designed 
 
 - Flutter SDK
 - Provider (State Management)
-- Twilio (Phone Authentication)
-- MongoDB Node.js Driver
 - Cupertino Icons
 
 ## 📋 Project Structure
