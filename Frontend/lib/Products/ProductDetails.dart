@@ -1,6 +1,6 @@
-
 import 'package:flutter/material.dart';
-import 'package:tap_on/User/AddToCart.dart';
+import 'package:provider/provider.dart';
+import 'package:tap_on/providers/cart_provider.dart';
 
 class ToolDetails extends StatelessWidget {
   final String title;
@@ -33,7 +33,6 @@ class ToolDetails extends StatelessWidget {
     availableHours = product['available_hours'] ?? 'N/A',
     discount = double.parse(product['discount'] ?? '0'),
     super(key: key);
-
 
   Widget _buildPriceCard() {
     final originalPrice = double.parse(price);
@@ -144,7 +143,6 @@ class ToolDetails extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                
                 SizedBox(height: 16),
                 Container(
                   color: Colors.black87,
@@ -221,7 +219,6 @@ class ToolDetails extends StatelessWidget {
                               fontWeight: FontWeight.w500,
                             ),
                           ),
-                          // Contact information and other existing widgets...
                         ],
                       ),
                     ),
@@ -231,14 +228,12 @@ class ToolDetails extends StatelessWidget {
                 Center(
                   child: Column(
                     children: [
-                     
                       ElevatedButton(
                         onPressed: () {
-                          Cart.addToCart(CartItem(
+                          Provider.of<CartProvider>(context, listen: false).addToCart(CartItem(
                             name: title,
                             category: '',
                             price: double.parse(price),
-                            imageUrl: image,
                             tag: '',
                             quantity: 1,
                             shopEmail: shopEmail,
@@ -257,7 +252,6 @@ class ToolDetails extends StatelessWidget {
                         child: Text('AddToCart'),
                       ),
                       SizedBox(height: 350),
-                     
                     ],
                   ),
                 ),

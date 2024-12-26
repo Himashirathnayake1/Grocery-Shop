@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:provider/provider.dart';
 import 'package:tap_on/User/LaunchPage.dart';
-
+import 'package:tap_on/providers/cart_provider.dart';
 import 'package:tap_on/constants.dart';
 
-//
-
-void main() async {
-  const String baseUrl = "http://localhost:3000/api/v1";
-  runApp(const InitialScreen());
+void main() {
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => CartProvider()),
+      ],
+      child: const InitialScreen(),
+    ),
+  );
 }
 
 class InitialScreen extends StatefulWidget {
@@ -23,7 +27,6 @@ class _InitialScreenState extends State<InitialScreen> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: LaunchPage(),
-      //home: HomePage(),
       title: appName,
       debugShowCheckedModeBanner: false,
     );
