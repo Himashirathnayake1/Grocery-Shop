@@ -67,65 +67,61 @@ Tapon is a feature-rich Flutter-based grocery store mobile application designed 
 ## 📋 Project Structure
 
 ```
-tapon/
+GROCERY-SHOP/
 │
-├── lib/
-│   ├── models/
-│   │   └── product.dart
-│   ├── providers/
-│   │   ├── cart_provider.dart
-│   │   └── auth_provider.dart
-│   ├── screens/
-│   │   ├── launch_screen.dart
-│   │   ├── number_entry_screen.dart
-│   │   ├── home_screen.dart
-│   │   ├── product_screen.dart
-│   │   └── cart_screen.dart
-│   └── main.dart
+├── Frontend/
+│   ├── lib/
+│   │   ├── Products/
+│   │   │   ├── ProductDetails.dart
+│   │   │   ├── ProductMenu.dart
+│   │   │   ├── ProductMenu2.dart
+│   │   │   ├── ProductMenu3.dart
+│   │   │   └── ProductMenu4.dart
+│   │   ├── User/
+│   │   │   ├── AddToCart.dart
+│   │   │   ├── ConfirmCart.dart
+│   │   │   ├── EnterNumber.dart
+│   │   │   ├── LaunchPage.dart
+│   │   │   └── Profile.dart
+│   │   ├── widgets/
+│   │   │   ├── Loading.dart
+│   │   │   ├── constants.dart
+│   │   │   └── HomePage.dart
+│   │   └── main.dart
 │
-├── backend/
-│   ├── app.js
-│   ├── config.js
-│   ├── routes/
-│   │   ├── auth_routes.js
-│   │   └── product_routes.js
-│   └── models/
-│       ├── user_model.js
-│       └── product_model.js
-│
-├── assets/
-│   ├── images/
-│   └── data/
-│       └── products.json
-│
-└── pubspec.yaml
+└── ios/
+
 ```
 
 ## 🔧 Customization
 
 - **Product Catalog**:
-  - Update `assets/data/products.json` to modify the product catalog.
+  - Update product-related details in the `Products/` folder, such as `ProductMenu.dart` and `ProductDetails.dart`.
 
 - **Theme**:
-  - Adjust styles in `main.dart` to customize the theme.
+  - Adjust styles and theming in `main.dart` to customize the app's appearance.
 
-- **Backend**:
-  - Extend routes and models in the `backend` folder for additional features.
+- **User Features**:
+  - Enhance user-related functionality by modifying files in the `User/` folder, such as `AddToCart.dart` and `Profile.dart`.
+
+- **Widgets**:
+  - Reuse or customize components in the `widgets/` folder to maintain a consistent UI across the app.
+
 
 ## 🤝 Contributing
 
 1. Fork the repository.
 2. Create your feature branch:
    ```bash
-   git checkout -b feature/AmazingFeature
+   git checkout -b feature/AmazingFeatures
    ```
 3. Commit your changes:
    ```bash
-   git commit -m 'Add some AmazingFeature'
+   git commit -m 'Add some AmazingFeatures'
    ```
 4. Push to the branch:
    ```bash
-   git push origin feature/AmazingFeature
+   git push origin feature/AmazingFeatures
    ```
 5. Open a pull request.
 
@@ -133,4 +129,4 @@ tapon/
 
 Distributed under the MIT License. See LICENSE for more information.
 
-Happy Shopping with Tapon! 🛒📱🍎
+Happy Shopping with Tapon Distributors! 🛒📱🍎
