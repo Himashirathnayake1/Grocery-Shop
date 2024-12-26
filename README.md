@@ -35,8 +35,6 @@ Tapon is a feature-rich Flutter-based grocery store mobile application designed 
 
 - Flutter SDK
 - Dart SDK
-- Node.js and npm
-- MongoDB (local or cloud instance)
 - Android Studio or VS Code
 
 ### Steps
